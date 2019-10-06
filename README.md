@@ -3,12 +3,10 @@
 
 **Warning** This code is **UNOFFICIAL**.
 
+* [Paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16325/16790)
 
-[Paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16325/16790)
-
-
-If you want to run this code.
-You need download some dataset and write experimenting code.
+If you want to run this code,
+you need download some dataset and write experimenting code.
 
 ```python
 from comet_ml import Experiment
