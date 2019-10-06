@@ -9,8 +9,6 @@ import torch.nn as nn
 from torch.utils.data import DataLoader
 from sklearn.metrics import confusion_matrix
 
-from ..utils.functions import ScheduledOptimizer
-
 
 class NeuralNetworkClassifier:
     """
