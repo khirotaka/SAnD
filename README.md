@@ -22,10 +22,9 @@ clf = NeuralNetworkClassifier( ... )
 clf.fit( ... )
 ```
 
-
 ## Installation
 `git clone https://github.com/KawashimaHirotaka/SAnD.git`
 
 ## Requirements
-* Python 3.6
-* PyTorch v1.1.0 or later
+  * Python 3.6
+  * PyTorch v1.1.0 or later
