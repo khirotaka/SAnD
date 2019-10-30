@@ -339,7 +339,8 @@ class NeuralNetworkClassifier:
         :return: None
         """
         self._start_epoch = checkpoints["epoch"]
-        assert isinstance(self._start_epoch, int)
+        if not isinstance(self._start_epoch, int):
+            raise TypeError
 
         if self._is_parallel:
             self.model.module.load_state_dict(checkpoints["model_state_dict"])
@@ -382,7 +383,9 @@ class NeuralNetworkClassifier:
         :param tag: str
         :return: None
         """
-        assert isinstance(tag, str)
+        if not isinstance(tag, str):
+            raise TypeError
+
         self.experiment.add_tag(tag)
 
     @property
@@ -391,7 +394,9 @@ class NeuralNetworkClassifier:
 
     @num_class.setter
     def num_class(self, num_class: int) -> None:
-        assert isinstance(num_class, int) and num_class > 0, "the number of class must be greater than 0."
+        if not (isinstance(num_class, int) and num_class > 0):
+            raise Exception("the number of class must be greater than 0.")
+
         self.__num_classes = num_class
         self.experiment.log_parameter("classes", self.__num_classes)
 
