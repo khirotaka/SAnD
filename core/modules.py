@@ -3,16 +3,6 @@ import math
 import torch
 import numpy as np
 import torch.nn as nn
-from ..utils.functions import silu
-
-
-class SiLU(nn.Module):
-    def __init__(self) -> None:
-        super(SiLU, self).__init__()
-
-    def forward(self, x: torch.Tensor) -> torch.Tensor:
-        x = silu(x)
-        return x
 
 
 class PositionalEncoding(nn.Module):
