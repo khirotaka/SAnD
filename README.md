@@ -23,7 +23,7 @@ clf.fit( ... )
 ```
 
 ## Installation
-`git clone https://github.com/KawashimaHirotaka/SAnD.git`
+`git clone https://github.com/khirotaka/SAnD.git`
 
 ## Requirements
 *   Python 3.6
