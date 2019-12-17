@@ -6,7 +6,7 @@ import torch.nn as nn
 
 
 class PositionalEncoding(nn.Module):
-    def __init__(self, d_model, seq_len):
+    def __init__(self, d_model, seq_len) -> None:
         super(PositionalEncoding, self).__init__()
         self.d_model = d_model
 
@@ -20,7 +20,7 @@ class PositionalEncoding(nn.Module):
         pe = pe.unsqueeze(0)
         self.register_buffer("pe", pe)
 
-    def forward(self, x):
+    def forward(self, x) -> torch.Tensor:
         seq_len = x.shape[1]
         x = math.sqrt(self.d_model) * x
         x = x + self.pe[:, :seq_len].requires_grad_(False)
@@ -113,7 +113,7 @@ class DenseInterpolation(nn.Module):
 
 
 class ClassificationModule(nn.Module):
-    def __init__(self, d_model: int, factor: int, num_class: int) -> int:
+    def __init__(self, d_model: int, factor: int, num_class: int) -> None:
         super(ClassificationModule, self).__init__()
         self.d_model = d_model
         self.factor = factor
