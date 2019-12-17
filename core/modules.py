@@ -136,7 +136,6 @@ class RegressionModule(nn.Module):
         self.d_model = d_model
         self.factor = factor
         self.output_size = output_size
-        
         self.fc = nn.Linear(int(d_model * factor), output_size)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
