@@ -17,7 +17,7 @@ def positional_encoding(n_positions: int, hidden_dim: int) -> torch.Tensor:
     return pos_enc
 
 
-def dense_interpolation(batch_size, seq_len, factor):
+def dense_interpolation(batch_size: int, seq_len: int, factor: int) -> torch.Tensor:
     W = np.zeros((factor, seq_len), dtype=np.float32)
     for t in range(seq_len):
         s = np.array((factor * (t + 1)) / seq_len, dtype=np.float32)

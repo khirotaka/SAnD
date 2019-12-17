@@ -3,6 +3,7 @@ import time
 import tqdm
 import pandas as pd
 from copy import deepcopy
+from typing import Dict
 
 import torch
 import torch.nn as nn
@@ -108,7 +109,7 @@ class NeuralNetworkClassifier:
             notice = "Running on {} GPUs.".format(torch.cuda.device_count())
             print("\033[33m" + notice + "\033[0m")
 
-    def fit(self, loader: dict, epochs: int, checkpoint_path: str = None, validation: bool = True) -> None:
+    def fit(self, loader: Dict[str, DataLoader], epochs: int, checkpoint_path: str = None, validation: bool = True) -> None:
         """
         | The method of training your PyTorch Model.
         | With the assumption, This method use for training network for classification.

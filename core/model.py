@@ -4,7 +4,7 @@ from ..core import modules
 
 
 class EncoderLayerForSAnD(nn.Module):
-    def __init__(self, input_features, seq_len, n_heads, n_layers, d_model=128, dropout_rate=0.2):
+    def __init__(self, input_features, seq_len, n_heads, n_layers, d_model=128, dropout_rate=0.2) -> None:
         super(EncoderLayerForSAnD, self).__init__()
         self.d_model = d_model
 
@@ -39,7 +39,7 @@ class SAnD(nn.Module):
     def __init__(
             self, input_features: int, seq_len: int, n_heads: int, factor: int,
             n_class: int, n_layers: int, d_model: int = 128, dropout_rate: float = 0.2
-    ):
+    ) -> None:
         super(SAnD, self).__init__()
         self.encoder = EncoderLayerForSAnD(input_features, seq_len, n_heads, n_layers, d_model, dropout_rate)
         self.dense_interpolation = modules.DenseInterpolation(seq_len, factor)
