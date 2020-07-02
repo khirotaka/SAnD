@@ -40,6 +40,7 @@ Run the `git init` & `git submodule add` command to  register SAnD project as a 
 
 ```shell script
 $ mkdir playground/
+$ cd playground/
 $ git init
 $ git submodule add https://github.com/khirotaka/SAnD.git
 ```
@@ -124,8 +125,8 @@ For the actual task, choose the appropriate hyperparameters for your model and o
 ### Regression Task
 There are two ways to use SAnD in a regression task.
 
- 1. Specify the number of output dimensions in `num_class`.
- 2. Inherit class SAnD and overwrite `ClassificationModule` with `RegressionModule`.
+1.  Specify the number of output dimensions in `num_class`.
+2.  Inherit class SAnD and overwrite `ClassificationModule` with `RegressionModule`.
 
 I would like to introduce a second point.
 
