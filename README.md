@@ -30,7 +30,6 @@ clf.fit( ... )
 *   Comet.ml
 *   PyTorch v1.1.0 or later
 
-
 ## Simple Usage
 Here's a brief overview of how you can use this project to help you solve the classification task.
 
@@ -125,8 +124,8 @@ For the actual task, choose the appropriate hyperparameters for your model and o
 ### Regression Task
 There are two ways to use SAnD in a regression task.
 
-1. Specify the number of output dimensions in `num_class`.
-2. Inherit class SAnD and overwrite `ClassificationModule` with `RegressionModule`.
+ 1. Specify the number of output dimensions in `num_class`.
+ 2. Inherit class SAnD and overwrite `ClassificationModule` with `RegressionModule`.
 
 I would like to introduce a second point.
 
@@ -153,7 +152,6 @@ model = RegSAnD(
 
 The contents of both ClassificationModule and RegressionModule are almost the same, so the 1st is recommended.
 
-
 Please let me know when my code has been used to bring products or research results to the world.   
 It's very encouraging :)
 
@@ -163,4 +161,3 @@ Hirotaka Kawashima (川島 寛隆)
 ## License
 Copyright (c) 2019 Hirotaka Kawashima  
 Released under the MIT license
-
