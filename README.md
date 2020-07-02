@@ -27,6 +27,7 @@ clf.fit( ... )
 
 ## Requirements
 *   Python 3.6
+*   Comet.ml
 *   PyTorch v1.1.0 or later
 
 
