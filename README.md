@@ -1,4 +1,8 @@
 # SAnD
+
+**This has been archived.**
+
+
 ## AAAI 2018 Attend and Diagnose: Clinical Time Series Analysis Using Attention Models
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/29dd2dce4acd401e9d8554a4d834c8f3)](https://www.codacy.com/manual/KawashimaHirotaka/SAnD?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=KawashimaHirotaka/SAnD&amp;utm_campaign=Badge_Grade)
